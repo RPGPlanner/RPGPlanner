@@ -1,0 +1,289 @@
+﻿body 
+{
+    background-color: #FFE4C4; /* bisque */
+    font-family: Arial;
+}
+
+.meetingBox
+{
+    width: 1000px;
+}
+
+.MeetingStatus_unknown
+{
+    background-color: #E5E5E5; /* Whitesmoke */
+}
+
+.MeetingStatus_accept
+{
+    background-color: #7FFF00; /* chartreuse */
+}
+
+.MeetingStatus_perhaps
+{
+    background-color: #FFFFFF;
+}
+
+.MeetingStatus_atHome
+{
+    background-color: #50C020;
+}
+
+.MeetingStatus_decline
+{
+    background-color: Red;
+}
+
+.editRow input[type="text"]
+{
+    width: 200px;
+}
+
+.editRow input[type="text"][title="Kommentar"],.editRow input[type="text"][title="Beschreibung"]
+{
+    width: 400px;
+}
+
+div.meetings
+{
+    position: relative;
+    left: 250px;
+}
+
+div.calendars
+{
+    position: fixed;
+    top:110px;
+}
+
+td.selectedMeeting
+{
+    background-image: url(pic/RoterKringel.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+td.updatedMeeting
+{
+    font-weight: bolder;
+}
+
+div.newMeeting
+{
+    position: fixed;
+    top: 600px;
+    width: 240px;
+}
+
+select.advSelect
+{
+    width: 240px;
+}
+
+div.meetingStatus
+{
+    display: inline-block;
+    width: 300px;
+}
+
+.statusChooser input[type="submit"],.statusChooser li
+{
+    display: block;
+    width: 200px;
+    position: relative;
+    left: -20px;
+}
+
+.statusSelectCol
+{
+    width: 140px;
+}
+
+div.meetingComment
+{
+    display: inline-block;
+    width: 490px;
+}
+
+div.meetingInfo
+{
+    display: inline-block;
+    width: 400px;
+}
+
+div.forum_groups
+{
+    position:fixed;
+    left: 10px;
+}
+
+span.forum_navGroup
+{
+  display:block;
+  position:relative;
+  border-style: solid;
+  border-color: #0000DD;
+  margin: 5px;
+  padding: 5px;
+  width: 170px;
+}
+
+span.forum_navGroup:hover
+{
+    background-color: #F5D0A0;
+}
+
+span.forum_selectedGroup>span
+{
+    background-color: #E0B080;
+}
+
+span.forum_navGroup h4
+{
+  margin: 4px;
+  font-size:1.2em;
+}
+
+span.forum_navGroup h5
+{
+  margin: 1px;
+}
+
+span.forum_navGroup img
+{
+  position:absolute;
+  right: 5px;
+  top: 5px;
+}
+
+div.forum_threads
+{
+    position:relative;
+    left: 220px;
+}
+
+div.forum_thread_display
+{
+    width:800px;
+}
+
+div.forum_message
+{
+    position:relative;
+    border-style: solid;
+    padding:10px;
+    padding-top:0px;
+    background-color: #DDDDDD;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom:10px;    
+}
+
+div.forum_message>h4
+{
+    font-size: larger;
+}
+
+div.forum_message_date
+{
+ position:absolute;
+right:0px;
+top:8px;
+}
+
+a.forum_message_edit
+{
+   position:absolute;
+   right:10px;
+   bottom:10px;
+}
+
+div.forum_message>div
+{
+   padding: 20px;
+}
+
+div.forum_message_text
+{
+   border-top:solid;
+}
+
+span.forum_message_remark
+{
+position: absolute;
+left: 5px;
+bottom: 0px;
+font-size: small;
+}
+
+textarea.forum_message_textbox
+{
+    width: 100%;
+    font-family: Arial;
+}
+
+div.content
+{
+    position:absolute;
+    top: 90px;
+}
+
+div.top
+{
+    position:fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:1;
+    background-color:#E0B080;
+}
+
+.top > h1 {
+    text-align:center;
+    font-size:2.5em;
+    margin:0px;
+}
+
+.top-current-user {
+    position:fixed;
+    top:10px;
+    right:10px;
+}
+
+ul.top-menu li:hover
+{
+background-color:#E0B080;
+}
+
+ul.top-menu a.selectedMenu
+{
+background-color:#FFF0DD;
+color:#805020;
+}
+
+ul.top-menu
+{
+    background-color:#A07040;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	margin : 0;
+	text-align: center;
+    width:100%;
+}
+
+ul.top-menu li
+{
+	display: inline;
+	margin: 0;
+	border-style: solid;
+    border-width:2px;
+}
+
+ul.top-menu a
+{
+	line-height:1.5em;
+	font-weight:bold;
+	padding: 0 1em;
+	color:White;
+	text-decoration:none;
+}

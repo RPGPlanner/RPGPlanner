@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_DSAPlaner", "DAL_DSAPlaner\DAL_DSAPlaner.csproj", "{8D8319F3-02DA-416A-B869-14B21E20B4F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSAPlanerService", "DSAPlanerService\DSAPlanerService.csproj", "{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSAPlaner", "DSAPlaner\DSAPlaner.csproj", "{C5FBDC0E-A1F7-451E-8F44-F901E817C6B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D8319F3-02DA-416A-B869-14B21E20B4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8319F3-02DA-416A-B869-14B21E20B4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8319F3-02DA-416A-B869-14B21E20B4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8319F3-02DA-416A-B869-14B21E20B4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5FBDC0E-A1F7-451E-8F44-F901E817C6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5FBDC0E-A1F7-451E-8F44-F901E817C6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5FBDC0E-A1F7-451E-8F44-F901E817C6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5FBDC0E-A1F7-451E-8F44-F901E817C6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

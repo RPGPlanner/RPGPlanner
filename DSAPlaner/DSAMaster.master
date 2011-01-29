@@ -1,0 +1,30 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="DSAMaster" Codebehind="DSAMaster.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>DSA Planer</title>
+        <link rel="stylesheet" type="text/css" href="DSAPlaner.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="top">
+        <h1>DSA Planer</h1>
+        <ul class="top-menu" id="lMenu" runat="server">
+        <li><a href="changelog.aspx">ChangeLog</a></li>
+        <li><a href="meetings.aspx">Terminkalender</a></li>
+        <li><a href="adventures.aspx">Abenteuer</a></li>
+        <li><a href="forum.aspx">Forum</a></li>
+        <li><a href="persons.aspx">Benutzerverwaltung</a></li>
+        <li><a href="personalData.aspx">Meine Daten</a></li>
+        </ul>
+        <span class="top-current-user">Angemeldeter Benutzer: <%= CurrentUser==null?"":CurrentUser.userName %></span>
+        </div>
+        <div class="content">
+        <asp:contentplaceholder id="mainContent" runat="server">
+        </asp:contentplaceholder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSAPlanerService</RootNamespace>
+    <AssemblyName>DSAPlanerService</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSAPlanerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSAPlanerService.Designer.cs">
+      <DependentUpon>DSAPlanerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globalInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="globalInstaller.Designer.cs">
+      <DependentUpon>globalInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serviceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="serviceInstaller.Designer.cs">
+      <DependentUpon>serviceInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serviceProcessInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="serviceProcessInstaller.Designer.cs">
+      <DependentUpon>serviceProcessInstaller.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DSAPlanerService.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DSAPlanerService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="globalInstaller.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>globalInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceInstaller.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>serviceInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceProcessInstaller.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>serviceProcessInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_DSAPlaner\DAL_DSAPlaner.csproj">
+      <Project>{8D8319F3-02DA-416A-B869-14B21E20B4F5}</Project>
+      <Name>DAL_DSAPlaner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
