@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_DSAPlaner", "DAL_DSAPlaner\DAL_DSAPlaner.csproj", "{8D8319F3-02DA-416A-B869-14B21E20B4F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSAPlanerService", "DSAPlanerService\DSAPlanerService.csproj", "{7B7C7FE8-95A8-4FF9-AD11-74F7E44CB0A6}"
